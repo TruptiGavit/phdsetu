@@ -1,0 +1,157 @@
+[
+  {
+    "slug": "00_MASTER_INDEX",
+    "title": "PhDSetu \u2014 Master Index & Canonical Reference",
+    "file": "00_MASTER_INDEX.md"
+  },
+  {
+    "slug": "02_GTM_Strategy",
+    "title": "PhDSetu \u2014 Go-To-Market Strategy",
+    "file": "02_GTM_Strategy.md"
+  },
+  {
+    "slug": "03_Community_Building_Playbook",
+    "title": "PhDSetu \u2014 Community Building Playbook",
+    "file": "03_Community_Building_Playbook.md"
+  },
+  {
+    "slug": "04_Financial_Model",
+    "title": "PhDSetu \u2014 Financial Model & Funding Strategy",
+    "file": "04_Financial_Model.md"
+  },
+  {
+    "slug": "05_Legal_Entity_Setup",
+    "title": "PhDSetu \u2014 Legal & Entity Setup",
+    "file": "05_Legal_Entity_Setup.md"
+  },
+  {
+    "slug": "06_Technical_Architecture",
+    "title": "PhDSetu \u2014 Technical Architecture Document",
+    "file": "06_Technical_Architecture.md"
+  },
+  {
+    "slug": "07_Content_Strategy_SEO",
+    "title": "PhDSetu \u2014 Content Strategy & SEO Blueprint",
+    "file": "07_Content_Strategy_SEO.md"
+  },
+  {
+    "slug": "08_UX_UI_Design_System",
+    "title": "PhDSetu \u2014 UX/UI Design System",
+    "file": "08_UX_UI_Design_System.md"
+  },
+  {
+    "slug": "09_Founders_Brand_Playbook",
+    "title": "Founder's Personal Brand Playbook \u2014 Dr. Sonali \u00d7 PhDSetu",
+    "file": "09_Founders_Brand_Playbook.md"
+  },
+  {
+    "slug": "10_Partnerships_Ecosystem",
+    "title": "PhDSetu \u2014 Partnerships & Ecosystem Map",
+    "file": "10_Partnerships_Ecosystem.md"
+  },
+  {
+    "slug": "11_Competitive_Intelligence",
+    "title": "PhDSetu \u2014 Competitive Intelligence Dossier",
+    "file": "11_Competitive_Intelligence.md"
+  },
+  {
+    "slug": "12_Impact_Measurement",
+    "title": "PhDSetu \u2014 Impact Measurement Framework",
+    "file": "12_Impact_Measurement.md"
+  },
+  {
+    "slug": "13_Global_Expansion",
+    "title": "PhDSetu \u2014 Global Expansion Playbook",
+    "file": "13_Global_Expansion.md"
+  },
+  {
+    "slug": "14_Team_Hiring_Plan",
+    "title": "PhDSetu \u2014 Team Hiring Plan",
+    "file": "14_Team_Hiring_Plan.md"
+  },
+  {
+    "slug": "15_PhD_Career_Report_Design",
+    "title": "PhDSetu \u2014 India's First Annual PhD Career Report: Design Document",
+    "file": "15_PhD_Career_Report_Design.md"
+  },
+  {
+    "slug": "16_Investor_Pitch_Deck",
+    "title": "PhDSetu \u2014 Investor & Grant Pitch Deck",
+    "file": "16_Investor_Pitch_Deck.md"
+  },
+  {
+    "slug": "17_AI_Ethics_Accessibility_Crisis",
+    "title": "PhDSetu \u2014 AI Ethics, Accessibility & Crisis Communication",
+    "file": "17_AI_Ethics_Accessibility_Crisis.md"
+  },
+  {
+    "slug": "18_Sonali_CoFounder_Playbook",
+    "title": "PhDSetu \u2014 Dr. Sonali Kulkarni: Co-Founder & CEO Playbook",
+    "file": "18_Sonali_CoFounder_Playbook.md"
+  },
+  {
+    "slug": "19_Radha_CoFounder_Playbook",
+    "title": "Radha \u2014 Co-Founder & CSO Playbook | PhDSetu",
+    "file": "19_Radha_CoFounder_Playbook.md"
+  },
+  {
+    "slug": "20_Trupti_CoFounder_Playbook",
+    "title": "Trupti Gavit \u2014 CTO Playbook | PhDSetu",
+    "file": "20_Trupti_CoFounder_Playbook.md"
+  },
+  {
+    "slug": "21_PhDSetu_Scrum_Board",
+    "title": "PhDSetu \u2014 Scrum Board & Sprint Planner",
+    "file": "21_PhDSetu_Scrum_Board.md"
+  },
+  {
+    "slug": "22_POC_Technical_Spec",
+    "title": "PhDSetu \u2014 POC Technical Specification (Month 4-5)",
+    "file": "22_POC_Technical_Spec.md"
+  },
+  {
+    "slug": "23_Stealth_Operations_Playbook",
+    "title": "PhDSetu \u2014 Stealth Operations Playbook",
+    "file": "23_Stealth_Operations_Playbook.md"
+  },
+  {
+    "slug": "24_Stealth_GTM_Distribution_Playbook",
+    "title": "PhDSetu \u2014 Stealth GTM &amp; Distribution Playbook",
+    "file": "24_Stealth_GTM_Distribution_Playbook.md"
+  },
+  {
+    "slug": "IIT_Ropar_Workshop_Slides",
+    "title": "What After the Degree? \u2014 IIT Ropar Workshop",
+    "file": "IIT_Ropar_Workshop_Slides.md"
+  },
+  {
+    "slug": "IIT_Ropar_Workshop_V2",
+    "title": "What After the Degree? \u2014 IIT Ropar Workshop (V2)",
+    "file": "IIT_Ropar_Workshop_V2.md"
+  },
+  {
+    "slug": "PhDSetu_Brainstorm_9_10_11",
+    "title": "PhDSetu \u2014 Brainstorms 9, 10 & 11",
+    "file": "PhDSetu_Brainstorm_9_10_11.md"
+  },
+  {
+    "slug": "PhDSetu_Career_Universe_Research",
+    "title": "PhDSetu \u2014 The Complete Career Universe for Researchers",
+    "file": "PhDSetu_Career_Universe_Research.md"
+  },
+  {
+    "slug": "PhDSetu_FINAL_BIBLE",
+    "title": "PhDSetu \u2014 The Final Bible v3.0",
+    "file": "PhDSetu_FINAL_BIBLE.md"
+  },
+  {
+    "slug": "PhDSetu_Master_Brainstorming",
+    "title": "PhDSetu \u2014 Master Brainstorming Document",
+    "file": "PhDSetu_Master_Brainstorming.md"
+  },
+  {
+    "slug": "PhDSetu_Workshop_MasterPlan",
+    "title": "PhDSetu \u2014 Workshop Master Plan & Platform Strategy",
+    "file": "PhDSetu_Workshop_MasterPlan.md"
+  }
+]

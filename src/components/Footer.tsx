@@ -24,6 +24,7 @@ const footerLinks = {
     { href: "/privacy", label: "Terms" },
     { href: "mailto:hello@phdsetu.org", label: "Email Us" },
     { href: "tel:+918433540271", label: "Call: +91 84335 40271" },
+    { href: "/admin", label: "Admin Corner" },
   ],
 };
 
