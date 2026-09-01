@@ -1,8 +1,13 @@
-"use client";
-
-import { useState } from "react";
+import type { Metadata } from "next";
 import Link from "next/link";
-import { ChevronDown, HelpCircle, ArrowRight } from "lucide-react";
+import { HelpCircle, ArrowRight } from "lucide-react";
+import { FAQItem } from "@/components/FAQItem";
+
+export const metadata: Metadata = {
+  title: "FAQ — Frequently Asked Questions | PhDSetu",
+  description:
+    "Answers to common questions about PhDSetu — our mission, tools, membership, Career Map, Evidence Bank, and how we help PhD researchers navigate careers.",
+};
 
 const faqs = [
   {
@@ -70,30 +75,6 @@ const faqs = [
     a: "We partner with universities for workshops, Career Map integration, and Campus Setu ambassador programs. If you're a faculty member, placement officer, or research administrator, visit our Workshop page, email hello@phdsetu.org, or call +91 84335 40271 to discuss hosting a session at your institution.",
   },
 ];
-
-function FAQItem({ q, a }: { q: string; a: string }) {
-  const [open, setOpen] = useState(false);
-
-  return (
-    <div className="border border-border rounded-2xl overflow-hidden bg-white">
-      <button
-        onClick={() => setOpen(!open)}
-        className="w-full flex items-center justify-between gap-4 px-6 py-5 text-left hover:bg-surface/50 transition-colors"
-        aria-expanded={open}
-      >
-        <span className="font-semibold text-foreground pr-4">{q}</span>
-        <ChevronDown
-          className={`w-5 h-5 text-muted shrink-0 transition-transform duration-200 ${open ? "rotate-180" : ""}`}
-        />
-      </button>
-      {open && (
-        <div className="px-6 pb-5 animate-fade-in">
-          <p className="text-sm text-muted leading-relaxed">{a}</p>
-        </div>
-      )}
-    </div>
-  );
-}
 
 export default function FAQPage() {
   return (

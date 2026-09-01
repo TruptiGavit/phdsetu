@@ -17,11 +17,11 @@ const footerLinks = {
   Community: [
     { href: "/community", label: "Join Community" },
     { href: "/faq", label: "FAQ" },
-    { href: "/community#campus-setu", label: "Campus Setu Ambassador" },
+    { href: "/workshop", label: "Host a Workshop" },
   ],
   Legal: [
     { href: "/privacy", label: "Privacy Policy" },
-    { href: "/about#terms", label: "Terms" },
+    { href: "/privacy", label: "Terms" },
     { href: "mailto:hello@phdsetu.org", label: "Email Us" },
     { href: "tel:+918433540271", label: "Call: +91 84335 40271" },
   ],

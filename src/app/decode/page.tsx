@@ -1,6 +1,4 @@
-"use client";
-
-import { useState } from "react";
+import type { Metadata } from "next";
 import Link from "next/link";
 import {
   Sparkles,
@@ -15,6 +13,13 @@ import {
   CheckCircle2,
   AlertCircle,
 } from "lucide-react";
+import { WaitlistForm } from "@/components/WaitlistForm";
+
+export const metadata: Metadata = {
+  title: "Decode My Research — AI Career Translator | PhDSetu",
+  description:
+    "Paste your thesis abstract and get an industry-readable summary in 30 seconds. AI-powered research-to-career translation for PhD researchers.",
+};
 
 const steps = [
   {
@@ -63,14 +68,6 @@ const academicInput = `We synthesized novel Al₂O₃–TiO₂ nanocomposite coa
 const industryOutput = `Developed advanced protective coatings for metal surfaces using nanocomposite materials — combining corrosion resistance with high-temperature durability. Skilled in materials characterization (SEM, XRD, electrochemical testing), process optimization, and translating lab results into scalable coating solutions for marine, energy, and industrial applications.`;
 
 export default function DecodePage() {
-  const [email, setEmail] = useState("");
-  const [submitted, setSubmitted] = useState(false);
-
-  function handleWaitlist(e: React.FormEvent) {
-    e.preventDefault();
-    if (email.trim()) setSubmitted(true);
-  }
-
   return (
     <>
       {/* Hero */}
@@ -103,33 +100,12 @@ export default function DecodePage() {
               search for.
             </p>
 
-            <form
-              onSubmit={handleWaitlist}
-              className="mt-10 flex flex-col sm:flex-row gap-3 max-w-md mx-auto"
-            >
-              <input
-                type="email"
-                value={email}
-                onChange={(e) => setEmail(e.target.value)}
-                placeholder="Enter your email for early access"
-                required
-                className="flex-1 px-5 py-3.5 rounded-full bg-white/10 border border-white/20 text-white placeholder:text-gray-400 focus:outline-none focus:ring-2 focus:ring-primary-light"
-              />
-              <button
-                type="submit"
-                className="inline-flex items-center justify-center gap-2 px-8 py-3.5 rounded-full bg-white text-surface-dark font-semibold hover:bg-gray-100 transition-colors whitespace-nowrap"
-              >
-                Join Waitlist
-                <ArrowRight className="w-4 h-4" />
-              </button>
-            </form>
-
-            {submitted && (
-              <p className="mt-4 text-sm text-emerald-300 flex items-center justify-center gap-2">
-                <CheckCircle2 className="w-4 h-4" />
-                You&apos;re on the list! We&apos;ll notify you when Decode launches.
-              </p>
-            )}
+            <WaitlistForm
+              variant="dark"
+              placeholder="Enter your email for early access"
+              buttonText="Join Waitlist"
+              successMessage="You're on the list! We'll notify you when Decode launches."
+            />
           </div>
         </div>
 
@@ -337,25 +313,11 @@ export default function DecodePage() {
             researchers.
           </p>
 
-          <form
-            onSubmit={handleWaitlist}
-            className="mt-10 flex flex-col sm:flex-row gap-3 max-w-md mx-auto"
-          >
-            <input
-              type="email"
-              value={email}
-              onChange={(e) => setEmail(e.target.value)}
-              placeholder="your.email@university.ac.in"
-              required
-              className="flex-1 px-5 py-3.5 rounded-full bg-white/10 border border-white/20 text-white placeholder:text-gray-400 focus:outline-none focus:ring-2 focus:ring-primary-light"
-            />
-            <button
-              type="submit"
-              className="inline-flex items-center justify-center gap-2 px-8 py-3.5 rounded-full bg-white text-surface-dark font-semibold hover:bg-gray-100 transition-colors"
-            >
-              Join Waitlist
-            </button>
-          </form>
+          <WaitlistForm
+            variant="dark"
+            placeholder="your.email@university.ac.in"
+            buttonText="Join Waitlist"
+          />
 
           <p className="mt-6 text-sm text-gray-400">
             Or explore the{" "}

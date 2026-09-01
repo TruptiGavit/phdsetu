@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 import {
   MessageSquare,
@@ -8,6 +9,12 @@ import {
   Clock,
   ThumbsUp,
 } from "lucide-react";
+
+export const metadata: Metadata = {
+  title: "Community — Researchers Helping Researchers | PhDSetu",
+  description:
+    "Join 5,000+ researchers navigating career transitions. Career Transitions, Interview Prep, PhD Wellness, and Domain Hub channels.",
+};
 
 const channels = [
   {
@@ -189,14 +196,17 @@ export default function CommunityPage() {
 
           <div className="mt-12 text-center">
             <Link
-              href="#"
+              href="/workshop"
               className="inline-flex items-center gap-2 px-8 py-4 rounded-full gradient-bg-accent text-white font-semibold hover:opacity-90"
             >
               Join the Community
               <ArrowRight className="w-4 h-4" />
             </Link>
             <p className="mt-3 text-sm text-muted">
-              Free to join. 5,000+ researchers already here.
+              Free to join. 5,000+ researchers already here. Call us at{" "}
+              <a href="tel:+918433540271" className="text-primary hover:underline font-medium">
+                +91 84335 40271
+              </a>
             </p>
           </div>
         </div>

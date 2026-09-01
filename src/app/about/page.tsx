@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 import {
   Compass,
@@ -10,6 +11,12 @@ import {
   Eye,
   Zap,
 } from "lucide-react";
+
+export const metadata: Metadata = {
+  title: "About PhDSetu — Mission, Methodology & Values",
+  description:
+    "Learn about PhDSetu's mission to bridge the career gap for 40,000+ PhD graduates in India. Capability-based navigation, not credential-based placement.",
+};
 
 const values = [
   {

@@ -1,3 +1,5 @@
+import type { Metadata } from "next";
+import Link from "next/link";
 import {
   Download,
   FileText,
@@ -10,6 +12,12 @@ import {
   ArrowRight,
   Sparkles,
 } from "lucide-react";
+
+export const metadata: Metadata = {
+  title: "Toolkit & Resources — Career Navigation Tools for Researchers | PhDSetu",
+  description:
+    "Free career navigation tools for PhD researchers — Capability Map, Evidence Bank, Career Playbooks, Interview Prep Kit, and the 7-Day Career Experiment.",
+};
 
 const toolkitItems = [
   {
@@ -144,10 +152,13 @@ export default function ToolkitPage() {
               professional summary in 30 seconds. Powered by AI trained on
               thousands of PhD-to-industry transitions.
             </p>
-            <button className="inline-flex items-center gap-2 px-8 py-3 rounded-full bg-white text-indigo-700 font-semibold hover:bg-gray-100 transition-colors">
+            <Link
+              href="/decode"
+              className="inline-flex items-center gap-2 px-8 py-3 rounded-full bg-white text-indigo-700 font-semibold hover:bg-gray-100 transition-colors"
+            >
               Get Early Access
               <ArrowRight className="w-4 h-4" />
-            </button>
+            </Link>
           </div>
         </div>
       </section>

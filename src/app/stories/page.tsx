@@ -1,5 +1,12 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 import { ArrowRight, Clock, MapPin, Star } from "lucide-react";
+
+export const metadata: Metadata = {
+  title: "Researcher Stories — Real PhD Career Transitions | PhDSetu",
+  description:
+    "Real transition stories from PhD researchers — Materials Science to R&D, Chemistry to IP Law, Biology to Data Science. Honest journeys with actionable lessons.",
+};
 
 const stories = [
   {

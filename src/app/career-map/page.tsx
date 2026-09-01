@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 import {
   Briefcase,
@@ -18,6 +19,12 @@ import {
   Building2,
   ArrowRight,
 } from "lucide-react";
+
+export const metadata: Metadata = {
+  title: "Career Map — 16+ PhD Career Paths | PhDSetu",
+  description:
+    "Explore 16+ career avenues for PhD and M.Tech researchers — Industry R&D, Consulting, Data Science, Patent Law, Startups, Policy, and more with salary ranges.",
+};
 
 const careers = [
   {

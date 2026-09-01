@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 import {
   Clock,
@@ -7,6 +8,12 @@ import {
   ArrowRight,
   Sparkles,
 } from "lucide-react";
+
+export const metadata: Metadata = {
+  title: "Career Navigation Workshop for PhD Researchers | PhDSetu",
+  description:
+    "90-minute hands-on career workshop for PhD and M.Tech scholars. Capability Mapping, Career Adjacencies, and the 7-Day Career Experiment. Request one for your institution.",
+};
 
 const agenda = [
   { time: "0-10 min", title: "Reset the Career Lens", desc: "Why your degree is finished but your career isn't. The translation problem." },
