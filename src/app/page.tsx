@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 import {
   Compass,
@@ -16,7 +17,47 @@ import {
   Lightbulb,
   ChevronRight,
   Star,
+  Mail,
+  FlaskConical,
+  Building2,
+  Plane,
+  BookMarked,
+  PauseCircle,
+  Accessibility,
+  Wrench,
+  UserCircle,
 } from "lucide-react";
+import { NewsletterSignup } from "@/components/NewsletterSignup";
+
+export const metadata: Metadata = {
+  title: "PhDSetu — Career Navigation for Researchers",
+  description:
+    "India's first capability-based career navigation platform for PhD, M.Tech & postgraduate researchers. Discover 16+ career paths, decode your research for industry, and join 5,000+ researchers.",
+  keywords: [
+    "PhD careers",
+    "researcher career navigation",
+    "PhD to industry",
+    "career after PhD",
+    "research careers India",
+    "PhDSetu",
+    "career adjacency",
+    "evidence bank",
+    "decode my research",
+  ],
+  openGraph: {
+    title: "PhDSetu — Your Research Opens More Doors Than You Think",
+    description:
+      "Career navigation platform for PhD & postgraduate researchers. Discover 16+ career paths, 50+ playbooks, and join 5,000+ researchers.",
+    type: "website",
+    siteName: "PhDSetu",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "PhDSetu — Career Navigation for Researchers",
+    description:
+      "Discover career adjacencies beyond academia. 16+ paths, AI research translator, and a community of 5,000+ researchers.",
+  },
+};
 
 const methodology = [
   {
@@ -89,19 +130,19 @@ const features = [
   },
   {
     icon: Sparkles,
-    title: "AI Career Translator",
-    desc: "Paste your thesis abstract — get an industry-readable professional summary in 30 seconds. Coming soon.",
-    href: "#",
+    title: "Decode My Research",
+    desc: "Paste your thesis abstract — get an industry-readable professional summary in 30 seconds. Join the waitlist.",
+    href: "/decode",
     color: "bg-cyan-50 text-cyan-600",
-    badge: "Coming Soon",
+    badge: "Early Access",
   },
 ];
 
 const stats = [
+  { num: "5,000+", label: "Researchers Connected" },
   { num: "16+", label: "Career Paths Mapped" },
-  { num: "80%", label: "PhDs face career anxiety" },
+  { num: "50+", label: "Career Playbooks" },
   { num: "₹1L Cr", label: "India's RDI Fund" },
-  { num: "68K+", label: "Patents filed in 2024-25" },
 ];
 
 const careerPaths = [
@@ -113,6 +154,57 @@ const careerPaths = [
   { icon: FileText, label: "Patent & IP", color: "text-rose-500" },
   { icon: Heart, label: "Science Communication", color: "text-pink-500" },
   { icon: Star, label: "Data Science", color: "text-orange-500" },
+];
+
+const personas = [
+  {
+    icon: FlaskConical,
+    title: "IIT PhD",
+    desc: "Strong technical depth but limited industry exposure. Discover paths beyond the default faculty-or-R&D binary.",
+    color: "bg-indigo-50 text-indigo-600",
+  },
+  {
+    icon: Building2,
+    title: "Tier-2 First-Gen",
+    desc: "Excellent research skills, fewer networks. PhDSetu bridges the access gap with tools and community.",
+    color: "bg-emerald-50 text-emerald-600",
+  },
+  {
+    icon: Plane,
+    title: "Postdoc Abroad",
+    desc: "Considering return to India or staying abroad? Navigate visa, salary, and career norms on both sides.",
+    color: "bg-cyan-50 text-cyan-600",
+  },
+  {
+    icon: BookMarked,
+    title: "Humanities PhD",
+    desc: "Your analytical rigor translates to policy, UX research, publishing, and consulting — not just academia.",
+    color: "bg-amber-50 text-amber-600",
+  },
+  {
+    icon: PauseCircle,
+    title: "Career Break Researcher",
+    desc: "Returning after a gap? Reframe your skills, update your Evidence Bank, and reconnect with opportunity.",
+    color: "bg-rose-50 text-rose-600",
+  },
+  {
+    icon: Accessibility,
+    title: "Disabled Researcher",
+    desc: "Career navigation that accounts for accessibility needs, remote work options, and inclusive employers.",
+    color: "bg-violet-50 text-violet-600",
+  },
+  {
+    icon: Wrench,
+    title: "M.Tech Student",
+    desc: "Industry-ready in 2 years, not 5. Map your project skills to R&D, product, and consulting roles early.",
+    color: "bg-orange-50 text-orange-600",
+  },
+  {
+    icon: UserCircle,
+    title: "Women in Research",
+    desc: "Navigate career transitions alongside peers who understand the unique challenges women face in research careers.",
+    color: "bg-pink-50 text-pink-600",
+  },
 ];
 
 export default function Home() {
@@ -188,8 +280,26 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Beyond the Thesis */}
+      <section className="py-20 bg-white">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <p
+            className="text-2xl md:text-3xl lg:text-4xl font-bold leading-snug"
+            style={{ fontFamily: "var(--font-playfair)" }}
+          >
+            Beyond the Thesis:
+            <span className="gradient-text"> Your Research Is a Launchpad</span>
+          </p>
+          <p className="mt-6 text-lg text-muted leading-relaxed max-w-2xl mx-auto">
+            You spent years mastering a domain. That expertise is worth far
+            more than a single career path. PhDSetu helps you see — and reach —
+            the doors your research already unlocked.
+          </p>
+        </div>
+      </section>
+
       {/* The Problem */}
-      <section className="py-24 bg-white">
+      <section className="py-24 bg-surface">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-3xl mx-auto text-center mb-16">
             <h2
@@ -251,7 +361,7 @@ export default function Home() {
       </section>
 
       {/* Methodology */}
-      <section className="py-24 bg-surface">
+      <section className="py-24 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2
@@ -268,7 +378,7 @@ export default function Home() {
           <div className="flex flex-col md:flex-row gap-4 max-w-5xl mx-auto">
             {methodology.map((m, i) => (
               <div key={m.step} className="flex-1 group">
-                <div className="bg-white rounded-2xl p-6 border border-border card-hover h-full">
+                <div className="bg-surface rounded-2xl p-6 border border-border card-hover h-full">
                   <div
                     className={`inline-flex items-center justify-center w-12 h-12 rounded-xl bg-gradient-to-br ${m.color} text-white text-sm font-bold mb-4`}
                   >
@@ -291,7 +401,7 @@ export default function Home() {
       </section>
 
       {/* Career Paths Teaser */}
-      <section className="py-24 bg-white">
+      <section className="py-24 bg-surface">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2
@@ -309,7 +419,7 @@ export default function Home() {
             {careerPaths.map((cp) => (
               <div
                 key={cp.label}
-                className="flex items-center gap-3 p-4 rounded-xl bg-surface border border-border card-hover cursor-pointer"
+                className="flex items-center gap-3 p-4 rounded-xl bg-white border border-border card-hover cursor-pointer"
               >
                 <cp.icon className={`w-5 h-5 ${cp.color}`} />
                 <span className="text-sm font-medium">{cp.label}</span>
@@ -330,7 +440,7 @@ export default function Home() {
       </section>
 
       {/* Features */}
-      <section className="py-24 bg-surface">
+      <section className="py-24 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2
@@ -350,7 +460,7 @@ export default function Home() {
               <Link
                 href={f.href}
                 key={f.title}
-                className="group bg-white rounded-2xl p-8 border border-border card-hover relative"
+                className="group bg-surface rounded-2xl p-8 border border-border card-hover relative"
               >
                 {f.badge && (
                   <span className="absolute top-4 right-4 text-xs font-medium px-3 py-1 rounded-full bg-cyan-100 text-cyan-700">
@@ -372,6 +482,108 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Decode Teaser */}
+      <section className="py-24 bg-surface">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+            <div>
+              <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-cyan-50 text-cyan-700 text-sm font-medium mb-6">
+                <Sparkles className="w-4 h-4" />
+                Early Access
+              </div>
+              <h2
+                className="text-3xl md:text-4xl font-bold mb-4"
+                style={{ fontFamily: "var(--font-playfair)" }}
+              >
+                Decode My Research
+              </h2>
+              <p className="text-lg text-muted leading-relaxed mb-6">
+                Paste your thesis abstract. Get an industry-readable summary,
+                matched career paths, and ATS-friendly keywords — in 30 seconds.
+              </p>
+              <Link
+                href="/decode"
+                className="inline-flex items-center gap-2 px-8 py-4 rounded-full gradient-bg-accent text-white font-semibold hover:opacity-90 transition-opacity"
+              >
+                Join the Waitlist
+                <ArrowRight className="w-4 h-4" />
+              </Link>
+            </div>
+
+            <div className="rounded-2xl border border-border overflow-hidden shadow-lg bg-white">
+              <div className="px-4 py-3 bg-surface-dark text-white text-xs font-mono flex items-center gap-2">
+                <Sparkles className="w-3.5 h-3.5 text-cyan-400" />
+                decode.phdsetu.org
+              </div>
+              <div className="p-6 space-y-4">
+                <div>
+                  <label className="text-xs font-semibold text-muted uppercase tracking-wider">
+                    Your Abstract
+                  </label>
+                  <div className="mt-2 p-4 rounded-xl bg-red-50 border border-red-100 text-xs text-muted leading-relaxed font-mono">
+                    Novel Al₂O₃–TiO₂ nanocomposite coatings via sol-gel
+                    electrophoretic deposition exhibiting enhanced corrosion
+                    resistance...
+                  </div>
+                </div>
+                <div className="flex justify-center">
+                  <div className="px-4 py-1.5 rounded-full bg-indigo-50 text-indigo-600 text-xs font-semibold">
+                    ✨ Translating...
+                  </div>
+                </div>
+                <div>
+                  <label className="text-xs font-semibold text-muted uppercase tracking-wider">
+                    Industry Profile
+                  </label>
+                  <div className="mt-2 p-4 rounded-xl bg-emerald-50 border border-emerald-100 text-xs text-foreground leading-relaxed">
+                    Materials scientist skilled in protective coating development,
+                    corrosion testing, and process scale-up for marine &amp;
+                    industrial applications.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Who Is PhDSetu For */}
+      <section className="py-24 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2
+              className="text-3xl md:text-4xl font-bold"
+              style={{ fontFamily: "var(--font-playfair)" }}
+            >
+              Who Is PhDSetu For?
+            </h2>
+            <p className="mt-4 text-lg text-muted">
+              Every researcher&apos;s journey is different. We built for all of
+              them.
+            </p>
+          </div>
+
+          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+            {personas.map((persona) => (
+              <div
+                key={persona.title}
+                className="bg-surface rounded-2xl p-6 border border-border card-hover"
+              >
+                <div
+                  className={`inline-flex items-center justify-center w-11 h-11 rounded-xl ${persona.color} mb-4`}
+                >
+                  <persona.icon className="w-5 h-5" />
+                </div>
+                <h3 className="font-bold mb-2">{persona.title}</h3>
+                <p className="text-sm text-muted leading-relaxed">
+                  {persona.desc}
+                </p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* Social Proof Quote */}
       <section className="py-24 gradient-bg text-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
@@ -387,6 +599,24 @@ export default function Home() {
             <div className="w-px h-8 bg-white/30" />
             <p className="text-sm text-gray-400">The PhDSetu Thesis</p>
           </div>
+        </div>
+      </section>
+
+      {/* Newsletter */}
+      <section className="py-24 bg-surface">
+        <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <Mail className="w-10 h-10 mx-auto mb-6 text-primary" />
+          <h2
+            className="text-3xl md:text-4xl font-bold"
+            style={{ fontFamily: "var(--font-playfair)" }}
+          >
+            Career Signals Newsletter
+          </h2>
+          <p className="mt-4 text-lg text-muted">
+            Biweekly career intelligence for researchers — market trends,
+            transition stories, and event announcements.
+          </p>
+          <NewsletterSignup />
         </div>
       </section>
 

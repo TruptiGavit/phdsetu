@@ -4,20 +4,25 @@ import { Compass } from "lucide-react";
 const footerLinks = {
   Platform: [
     { href: "/career-map", label: "Career Map" },
-    { href: "/stories", label: "Researcher Stories" },
-    { href: "/toolkit", label: "Toolkit & Resources" },
-    { href: "/community", label: "Community" },
+    { href: "/decode", label: "Decode My Research" },
+    { href: "/salary-guide", label: "Salary Guide" },
+    { href: "/stories", label: "Stories" },
   ],
   Resources: [
-    { href: "/workshop", label: "Workshops" },
+    { href: "/toolkit", label: "Toolkit" },
+    { href: "/workshop", label: "Workshop" },
+    { href: "/events", label: "Events" },
     { href: "/toolkit#playbooks", label: "Career Playbooks" },
-    { href: "/toolkit#evidence-bank", label: "Evidence Bank" },
-    { href: "/about", label: "About PhDSetu" },
   ],
-  Connect: [
-    { href: "mailto:hello@phdsetu.org", label: "hello@phdsetu.org" },
-    { href: "https://twitter.com/phdsetu", label: "Twitter / X" },
-    { href: "https://linkedin.com/company/phdsetu", label: "LinkedIn" },
+  Community: [
+    { href: "/community", label: "Join Community" },
+    { href: "/faq", label: "FAQ" },
+    { href: "/community#campus-setu", label: "Campus Setu Ambassador" },
+  ],
+  Legal: [
+    { href: "/privacy", label: "Privacy Policy" },
+    { href: "/about#terms", label: "Terms" },
+    { href: "mailto:hello@phdsetu.org", label: "Contact" },
   ],
 };
 
@@ -25,8 +30,8 @@ export function Footer() {
   return (
     <footer className="bg-surface-dark text-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-12">
-          <div>
+        <div className="grid grid-cols-1 md:grid-cols-5 gap-12">
+          <div className="md:col-span-1">
             <Link href="/" className="flex items-center gap-2 mb-4">
               <div className="w-9 h-9 rounded-xl bg-gradient-to-br from-primary to-secondary flex items-center justify-center">
                 <Compass className="w-5 h-5 text-white" />
