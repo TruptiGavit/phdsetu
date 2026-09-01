@@ -22,7 +22,8 @@ const footerLinks = {
   Legal: [
     { href: "/privacy", label: "Privacy Policy" },
     { href: "/about#terms", label: "Terms" },
-    { href: "mailto:hello@phdsetu.org", label: "Contact" },
+    { href: "mailto:hello@phdsetu.org", label: "Email Us" },
+    { href: "tel:+918433540271", label: "Call: +91 84335 40271" },
   ],
 };
 

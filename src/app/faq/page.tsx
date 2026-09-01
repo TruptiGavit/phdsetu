@@ -67,7 +67,7 @@ const faqs = [
   },
   {
     q: "How can my institution partner with PhDSetu?",
-    a: "We partner with universities for workshops, Career Map integration, and Campus Setu ambassador programs. If you're a faculty member, placement officer, or research administrator, visit our Workshop page or email hello@phdsetu.org to discuss hosting a session at your institution.",
+    a: "We partner with universities for workshops, Career Map integration, and Campus Setu ambassador programs. If you're a faculty member, placement officer, or research administrator, visit our Workshop page, email hello@phdsetu.org, or call +91 84335 40271 to discuss hosting a session at your institution.",
   },
 ];
 
@@ -145,8 +145,11 @@ export default function FAQPage() {
               Still have questions?
             </h3>
             <p className="text-sm text-muted mb-6">
-              Reach out at hello@phdsetu.org or join our community for
-              peer-to-peer support.
+              Reach out at hello@phdsetu.org, call us at{" "}
+              <a href="tel:+918433540271" className="text-primary font-medium hover:underline">
+                +91 84335 40271
+              </a>
+              , or join our community for peer-to-peer support.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link

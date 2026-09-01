@@ -1,17 +1,11 @@
 import Link from "next/link";
 import {
-  Calendar,
   Clock,
   MapPin,
   Users,
   CheckCircle,
   ArrowRight,
   Sparkles,
-  Target,
-  Lightbulb,
-  FileText,
-  MessageSquare,
-  Star,
 } from "lucide-react";
 
 const agenda = [
@@ -57,10 +51,7 @@ export default function WorkshopPage() {
 
             <div className="mt-8 flex flex-wrap gap-6 text-sm text-gray-300">
               <span className="flex items-center gap-2">
-                <MapPin className="w-4 h-4" /> IIT Ropar
-              </span>
-              <span className="flex items-center gap-2">
-                <Calendar className="w-4 h-4" /> Date TBA
+                <MapPin className="w-4 h-4" /> At Your Institution
               </span>
               <span className="flex items-center gap-2">
                 <Clock className="w-4 h-4" /> 90 Minutes
@@ -70,14 +61,20 @@ export default function WorkshopPage() {
               </span>
             </div>
 
-            <div className="mt-10">
+            <div className="mt-10 flex flex-col sm:flex-row gap-4">
               <Link
                 href="#register"
                 className="inline-flex items-center gap-2 px-8 py-4 rounded-full bg-white text-surface-dark font-semibold text-base hover:bg-gray-100 transition-colors"
               >
-                Register Free
+                Request a Workshop
                 <ArrowRight className="w-4 h-4" />
               </Link>
+              <a
+                href="tel:+918433540271"
+                className="inline-flex items-center gap-2 px-8 py-4 rounded-full border-2 border-white/30 text-white font-semibold text-base hover:bg-white/10 transition-colors"
+              >
+                Call Us: +91 84335 40271
+              </a>
             </div>
           </div>
         </div>
@@ -185,17 +182,17 @@ export default function WorkshopPage() {
             className="text-3xl md:text-4xl font-bold mb-4"
             style={{ fontFamily: "var(--font-playfair)" }}
           >
-            Register for the Workshop
+            Bring This Workshop to Your Institution
           </h2>
           <p className="text-gray-300 mb-8">
-            Free for all PhD and M.Tech scholars. Limited seats — register early
-            to secure your spot.
+            We partner with universities, research institutions, and placement cells to deliver
+            career navigation workshops for PhD &amp; M.Tech scholars. Free for students.
           </p>
 
           <form className="max-w-md mx-auto space-y-4">
             <input
               type="text"
-              placeholder="Full Name"
+              placeholder="Your Name"
               className="w-full px-4 py-3 rounded-xl bg-white/10 border border-white/20 text-white placeholder-gray-400 focus:outline-none focus:border-white/40"
             />
             <input
@@ -205,27 +202,37 @@ export default function WorkshopPage() {
             />
             <input
               type="text"
+              placeholder="Institution Name"
+              className="w-full px-4 py-3 rounded-xl bg-white/10 border border-white/20 text-white placeholder-gray-400 focus:outline-none focus:border-white/40"
+            />
+            <input
+              type="text"
               placeholder="Department / Research Area"
               className="w-full px-4 py-3 rounded-xl bg-white/10 border border-white/20 text-white placeholder-gray-400 focus:outline-none focus:border-white/40"
             />
             <select className="w-full px-4 py-3 rounded-xl bg-white/10 border border-white/20 text-gray-300 focus:outline-none focus:border-white/40">
-              <option value="">Current Stage</option>
-              <option value="phd-early">PhD — Early Stage (1st-2nd year)</option>
-              <option value="phd-mid">PhD — Mid Stage (3rd-4th year)</option>
-              <option value="phd-final">PhD — Final Year / Writing Thesis</option>
-              <option value="mtech">M.Tech Student</option>
-              <option value="postdoc">Postdoc</option>
-              <option value="completed">Recently Completed</option>
+              <option value="">You Are...</option>
+              <option value="student">PhD / M.Tech Scholar</option>
+              <option value="faculty">Faculty / Research Supervisor</option>
+              <option value="placement">Placement / Career Cell Officer</option>
+              <option value="admin">Research Administration</option>
+              <option value="other">Other</option>
             </select>
             <button
               type="submit"
               className="w-full px-8 py-4 rounded-xl bg-white text-surface-dark font-semibold text-base hover:bg-gray-100 transition-colors"
             >
-              Register — It&apos;s Free
+              Request Workshop
             </button>
           </form>
 
-          <p className="mt-4 text-xs text-gray-500">
+          <p className="mt-6 text-sm text-gray-400">
+            Or call us directly at{" "}
+            <a href="tel:+918433540271" className="text-white underline font-medium">
+              +91 84335 40271
+            </a>
+          </p>
+          <p className="mt-2 text-xs text-gray-500">
             We respect your privacy. No spam, ever.
           </p>
         </div>

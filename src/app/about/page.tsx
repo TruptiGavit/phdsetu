@@ -47,7 +47,7 @@ const values = [
 const milestones = [
   { label: "Research", desc: "Understand the crisis: 80% of PhD scholars face career anxiety. No platform addresses this." },
   { label: "Design", desc: "Develop the Research → Capability → Possibility → Evidence → Action methodology." },
-  { label: "Workshop", desc: "Validate with live workshops at premier institutions. IIT Ropar is our pilot." },
+  { label: "Workshop", desc: "Validate with live workshops at premier institutions across India." },
   { label: "Platform", desc: "Build tools that researchers actually use — Career Map, Evidence Bank, Community." },
   { label: "Scale", desc: "Expand to 50+ institutions, vernacular content, institutional partnerships." },
 ];
@@ -250,6 +250,12 @@ export default function AboutPage() {
               Partner With Us
             </Link>
           </div>
+          <p className="mt-6 text-sm text-gray-400">
+            Or call us at{" "}
+            <a href="tel:+918433540271" className="text-white underline">
+              +91 84335 40271
+            </a>
+          </p>
         </div>
       </section>
     </>

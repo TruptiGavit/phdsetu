@@ -18,23 +18,23 @@ const upcomingEvents = [
   {
     icon: Mic,
     title: "Ask an Industry Researcher — AMA",
-    date: "Monthly · Next: October 2025",
+    date: "Monthly · Recurring",
     format: "Virtual · Live Q&A",
     desc: "Monthly AMA with researchers who've transitioned to industry R&D, consulting, and product roles. Ask anything — interviews, salary, daily work.",
     color: "bg-indigo-50 text-indigo-600",
   },
   {
     icon: MapPin,
-    title: "IIT Ropar Career Navigation Workshop",
-    date: "September 2025",
-    format: "In-person · Full-day workshop",
-    desc: "Flagship workshop covering Capability Mapping, Career Adjacencies, and the 7-Day Career Experiment. Open to all PhD and M.Tech researchers.",
+    title: "Career Navigation Workshop",
+    date: "Upcoming · Dates announced monthly",
+    format: "In-person · 90-minute workshop",
+    desc: "Our flagship workshop covering Capability Mapping, Career Adjacencies, and the 7-Day Career Experiment. Want us at your institution? Call +91 84335 40271.",
     color: "bg-emerald-50 text-emerald-600",
   },
   {
     icon: Users,
     title: "Career Path Show & Tell",
-    date: "November 2025",
+    date: "Quarterly · Next session TBA",
     format: "Virtual · Community event",
     desc: "Researchers share their transition stories in 10-minute lightning talks. Learn from peers who've made the leap — and ask questions in real time.",
     color: "bg-purple-50 text-purple-600",
@@ -195,13 +195,21 @@ export default function EventsPage() {
                   </li>
                 ))}
               </ul>
-              <Link
-                href="/workshop"
-                className="inline-flex items-center gap-2 px-8 py-4 rounded-full gradient-bg-accent text-white font-semibold hover:opacity-90 transition-opacity"
-              >
-                Partner With Us
-                <ArrowRight className="w-4 h-4" />
-              </Link>
+              <div className="flex flex-col sm:flex-row gap-4">
+                <Link
+                  href="/workshop"
+                  className="inline-flex items-center gap-2 px-8 py-4 rounded-full gradient-bg-accent text-white font-semibold hover:opacity-90 transition-opacity"
+                >
+                  Partner With Us
+                  <ArrowRight className="w-4 h-4" />
+                </Link>
+                <a
+                  href="tel:+918433540271"
+                  className="inline-flex items-center gap-2 px-8 py-4 rounded-full border-2 border-border text-foreground font-semibold hover:bg-surface transition-colors"
+                >
+                  Call: +91 84335 40271
+                </a>
+              </div>
             </div>
 
             <div className="bg-surface rounded-2xl p-8 border border-border">

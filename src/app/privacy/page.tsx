@@ -66,8 +66,9 @@ const sections = [
     content: [
       "Data Protection Officer: privacy@phdsetu.org",
       "General inquiries: hello@phdsetu.org",
+      "Phone: +91 84335 40271",
       "PhDSetu, India",
-      "Last updated: September 2025",
+      "Last updated: September 2026",
     ],
   },
 ];
